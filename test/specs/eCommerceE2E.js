@@ -1,8 +1,7 @@
+const expectchai = require('chai').expect
 describe('Ecommerce Application', () => {
     it('End to End Testing', () => {
-
         var products = ["Blackberry", "Nokia Edge"]
-
         browser.maximizeWindow()
         browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
         $("#username").setValue("rahulshettyacademy")
@@ -13,13 +12,25 @@ describe('Ecommerce Application', () => {
         browser.pause(4000)
         const link = $("*=Checkout")
         link.waitForExist()
-
         cards = $$("div[class='card h-100']")
         cards.filter(card => products.includes(card.$("div h4 a").getText()))         // It returns an Array of two elements
             .map(productCard => productCard.$(".card-footer button").click())
+        link.click()
+        productPrices = $$("//tr/td[4]/strong")
+        const sumOfProducts = productPrices.map(productPrice => parseInt(productPrice.getText().split(".")[1].trim()))
+            .reduce((acc, price) => acc + price, 0)
+        console.log(sumOfProducts)
+        const TotalValue = $("h3 strong").getText()
+        const toTotalIntValue = parseInt(TotalValue.split(".")[1].trim())
+        expectchai(sumOfProducts).to.equal(toTotalIntValue)
+        $(".btn-success").click()
+        $("#country").setValue("Ind")
+        $(".lds-ellipsis").waitForExist({ reverse: true })
+        $("*=India").click()
+        $("label[for='checkbox2']").click()
+        $(".btn-success").click()
+        expect($(".alert-success")).toHaveTextContaining("Success")
+
         browser.pause(4000)
-
-
-
     })
 })

@@ -24,6 +24,8 @@ describe('Ecommerce Application', () => {
         expect($("p.text-white")).toHaveTextContaining("rahulshettyacademy")
         //expect(browser).toHaveTitleContaining("Proto")
         //browser.pause(3000)
+
+
     })
 
 
