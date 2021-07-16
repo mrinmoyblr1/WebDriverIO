@@ -32,6 +32,7 @@ describe('Ecommerce Application', () => {
         $("#username").setValue("rahulshettyacademy")
         const password = $("//*[@id='password']")
         password.setValue("learning")
+        
         $("#signInBtn").click()
 
         const link = $("*=Checkout")

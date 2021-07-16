@@ -15,7 +15,7 @@ describe('Ecommerce Application', () => {
         link.waitForExist()
 
         cards = $$("div[class='card h-100']")
-        cards.filter(card => products.includes(card.$("div h4 a").getText()))         // It returns an Array of rwo elements
+        cards.filter(card => products.includes(card.$("div h4 a").getText()))         // It returns an Array of two elements
             .map(productCard => productCard.$(".card-footer button").click())
         browser.pause(4000)
 
