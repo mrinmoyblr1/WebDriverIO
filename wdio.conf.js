@@ -24,7 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/eCommerceE2E.js'
+        './test/specs/**/poTest.js'
     ],
     // Patterns to exclude.
     exclude: [

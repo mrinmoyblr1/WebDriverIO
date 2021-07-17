@@ -24,31 +24,19 @@ describe('Ecommerce Application', () => {
         expect($("p.text-white")).toHaveTextContaining("rahulshettyacademy")
         //expect(browser).toHaveTitleContaining("Proto")
         //browser.pause(3000)
-
-
     })
-
-
+    
     it('Login Successful Page', () => {
         browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
         $("#username").setValue("rahulshettyacademy")
         const password = $("//*[@id='password']")
         password.setValue("learning")
-        
         $("#signInBtn").click()
-
         const link = $("*=Checkout")
         //This is the Partial Linked Test syntax
         link.waitForExist()
         //This wait time period will be configured from "waitforTimeout: 10000" filed under "wdio.conf.js" file
-
         expect(browser).toHaveTitleContaining("ProtoCommerce")
         expect(browser).toHaveUrlContaining("shop")
-
     })
 });
-
-
-
-
-
