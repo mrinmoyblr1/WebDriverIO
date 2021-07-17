@@ -5,12 +5,9 @@ class reviewPage {
     get totalPrices() {
         return $("h3 strong")
     }
-
     get checkoutButton() {
         return $(".btn-success")
     }
-    
-
     sumOfProducts() {
         const sumOfProducts = this.productPrices.map(productPrice => parseInt(productPrice.getText().split(".")[1].trim()))
             .reduce((acc, price) => acc + price, 0)

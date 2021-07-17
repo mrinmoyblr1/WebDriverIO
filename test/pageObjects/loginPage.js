@@ -15,7 +15,6 @@ class loginPage {
     get textInfo() {
         return $("p.text-white")
     }
-
     Login(userName, Password) {
         this.userName.setValue(userName)
         this.Password.setValue(Password)
