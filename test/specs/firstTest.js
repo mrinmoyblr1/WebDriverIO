@@ -52,6 +52,6 @@ describe('Ecommerce Application', () => {
             $("input[id*='pass']").setValue("Hello")
             $("#signInBtn").click()            
 
-            expect($("p.text-white")).toHaveTextContaining("rahul shetty academy")
+            expect($("p.text-white")).toHaveTextContaining("rahulshettyacademy")
         })
 });

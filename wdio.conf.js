@@ -23,19 +23,15 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-
     suites: {
         debitCard: ['test/specs/windowsFrames.js', 'test/specs/uiControls.js'],
         creditCard: ['test/specs/eCommerceE2E.js']
     },
-
     specs: [
         './test/specs/**/*.js'
     ],
     // Patterns to exclude.
-
-    exclude: [
-        'test/specs/eCommerceE2E.js',
+    exclude: [       
         'test/specs/uiControls.js',
         'test/specs/finctionalScenarios.js',
         'test/specs/poTest.js'
@@ -95,8 +91,6 @@ exports.config = {
             }
         }
     ],
-
-
     //
     // ===================
     // Test Configurations
@@ -105,6 +99,9 @@ exports.config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'silent',
+
+
+
     //
     // Set specific log levels per logger
     // loggers:
@@ -173,6 +170,12 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
+
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverScreenshotsReporting: false,
+    }]],
+
     //
     // =====
     // Hooks
@@ -228,36 +231,60 @@ exports.config = {
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
+
+
+
     // beforeSuite: function (suite) {
     // },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
+
+
     // beforeTest: function (test, context) {
     // },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
      */
+
+
+
     // beforeHook: function (test, context) {
     // },
     /**
      * Hook that gets executed _after_ a hook within the suite starts (e.g. runs after calling
      * afterEach in Mocha)
      */
+
+
     // afterHook: function (test, context, { error, result, duration, passed, retries }) {
     // },
+
+
+
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    // },
+    afterTest: function (test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            browser.takeScreenshot();
+        }
+    },
+
+
+
+
+
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
      */
+
+
     // afterSuite: function (suite) {
     // },
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
