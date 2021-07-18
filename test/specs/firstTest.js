@@ -1,7 +1,7 @@
 describe('Ecommerce Application', () => {
-    it('Login Failed Page', () => {
+    it('Login Failed Page-Smoke', () => {
         //WebDriverIOCode Here
-        browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
+        browser.url("/loginpagePractise/#")
         browser.maximizeWindow()
         console.log("The Page Title is : " + browser.getTitle())
         expect(browser).toHaveTitleContaining("Rahul Shetty Academy")

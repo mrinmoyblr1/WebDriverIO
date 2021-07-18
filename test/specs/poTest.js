@@ -11,7 +11,7 @@ let e2eCredentials = JSON.parse(fs.readFileSync("test/testData/e2eTest.json"))
 describe('Ecommerce Application', () => {
     credentials.forEach(({ username, password }) => {
         it('Login Failed Page', () => {
-            browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
+            browser.url("/loginpagePractise/#")
             browser.maximizeWindow()
             console.log("The Page Title is : " + browser.getTitle())
             expect(browser).toHaveTitleContaining("Rahul Shetty Academy")
@@ -26,7 +26,7 @@ describe('Ecommerce Application', () => {
         it('End to End Testing', () => {
             // var products = ["Blackberry", "Nokia Edge"]
             browser.maximizeWindow()
-            browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
+            browser.url("/loginpagePractise/#")
             loginPage.Login("rahulshettyacademy", "learning")
             shopPage.checkout.waitForExist()
             shopPage.addProductToCart(products)

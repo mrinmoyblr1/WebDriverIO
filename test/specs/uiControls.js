@@ -1,7 +1,7 @@
 const expectchai = require('chai').expect
 describe('Ecommerce Application', () => {
-    it('UI Controls', () => {
-        browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
+    it('UI Controls Smoke', () => {
+        browser.url("/loginpagePractise/#")
         browser.maximizeWindow()
         $("#username").setValue("rahulshettyacademy")
         const password = $("//*[@id='password']")
@@ -29,7 +29,7 @@ describe('Ecommerce Application', () => {
         expectchai(dropdown.getValue()).to.equal('stud')
     })
     it('Dynamic Dropdown Controls', () => {
-        browser.url("https://rahulshettyacademy.com/AutomationPractice/");
+        browser.url("/AutomationPractice/");
         browser.maximizeWindow()
         $("#autocomplete").setValue("Ind")
         browser.pause(4000)
@@ -42,7 +42,7 @@ describe('Ecommerce Application', () => {
         browser.pause(4000)
     })
     it('Checkboxes Identification', () => {
-        browser.url("https://rahulshettyacademy.com/AutomationPractice/");
+        browser.url("/AutomationPractice/");
         browser.maximizeWindow()
         const element=$$("input[type='checkbox']")
         browser.pause(4000)

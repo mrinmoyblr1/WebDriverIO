@@ -21,9 +21,9 @@ describe('Functional Testing on Application', () => {
         //>>This will return the Alert Text
         browser.acceptAlert()
     })
-    it('Web Tables Sort Validations', () => {
+    it('Web Tables Sort Validations Smoke', () => {
         browser.maximizeWindow()
-        browser.url("https://rahulshettyacademy.com/seleniumPractise/#/offers")
+        browser.url("/seleniumPractise/#/offers")
         $("tr th:nth-child(1)").click()
         const veggiesLocators = $$("tr td:nth-child(1)")
         const OriginalVeggiesNames = veggiesLocators.map(veggie => veggie.getText())

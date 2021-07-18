@@ -52,20 +52,41 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
-    
+    capabilities: [
+        {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 5,
         //
+        // browserName: 'chrome', 
+        // 'goog:chromeOptions': {
+        //     args: ['--headless', '--disable-gpu']        
+        // },
         browserName: 'chrome',
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+    },
+    {
+        // maxInstances can get overwritten per capability. So if you have an in house Selenium
+        // grid with only 5 firefox instance available you can make sure that not more than
+        // 5 instance gets started at a time.
+        maxInstances: 5,
+        browserName: 'firefox',
+        specs: [
+            './test/specs/**/po.js'
+        ],
+        'moz:firefoxOptions': {
+            // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
+            // args: ['-headless']
+        }
+    }
+    ],
+
+    
     //
     // ===================
     // Test Configurations
@@ -97,7 +118,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'https://rahulshettyacademy.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -114,7 +135,6 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -136,9 +156,6 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
-
-
-    
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -225,8 +242,6 @@ exports.config = {
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
-
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
