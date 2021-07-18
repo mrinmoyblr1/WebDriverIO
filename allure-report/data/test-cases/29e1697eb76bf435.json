@@ -1,0 +1,48 @@
+{
+  "uid" : "29e1697eb76bf435",
+  "name" : "Login Successful Page-Sanity",
+  "fullName" : "Ecommerce Application.Login Successful Page-Sanity",
+  "historyId" : "24ea5df7d397577bd67f2f7f44132c88",
+  "time" : {
+    "start" : 1626621695379,
+    "stop" : 1626621695379,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Ecommerce Application"
+  }, {
+    "name" : "testClass",
+    "value" : "Ecommerce Application"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login Successful Page-Sanity"
+  }, {
+    "name" : "package",
+    "value" : "Ecommerce Application"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29e1697eb76bf435.json",
+  "parameterValues" : [ ]
+}

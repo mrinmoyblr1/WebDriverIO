@@ -1,0 +1,48 @@
+{
+  "uid" : "c52fd6a0ee1c9a7b",
+  "name" : "Login Failed Page-Smoke",
+  "fullName" : "Ecommerce Application.Login Failed Page-Smoke",
+  "historyId" : "818361b15d010feb91e1e22f3537819c",
+  "time" : {
+    "start" : 1626621695378,
+    "stop" : 1626621695378,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Ecommerce Application"
+  }, {
+    "name" : "testClass",
+    "value" : "Ecommerce Application"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login Failed Page-Smoke"
+  }, {
+    "name" : "package",
+    "value" : "Ecommerce Application"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c52fd6a0ee1c9a7b.json",
+  "parameterValues" : [ ]
+}

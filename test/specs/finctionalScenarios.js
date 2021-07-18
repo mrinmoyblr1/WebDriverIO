@@ -43,6 +43,6 @@ describe('Functional Testing on Application', () => {
         expect(veggiLocators).toBeElementsArrayOfSize({ eq: 1 })
         // This is WebDriverIO assertion. {eq:1} is to check the size is equal to 0
         expect(veggiLocators[0].getText()).toEqual("Tomato")
-        expect(veggiLocators[0]).toHaveTextContaining("Tomato")
+        expect(veggiLocators[0]).toHaveTextContaining("Tomato1234")
     })
 })

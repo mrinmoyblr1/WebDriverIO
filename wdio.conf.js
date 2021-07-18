@@ -32,8 +32,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [       
-        'test/specs/uiControls.js',
-        'test/specs/finctionalScenarios.js',
+        'test/specs/uiControls.js',        
         'test/specs/poTest.js'
     ],
     //

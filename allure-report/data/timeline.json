@@ -1,0 +1,216 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "0-1",
+    "children" : [ {
+      "name" : "Web Tables Filter Validations",
+      "uid" : "93f1725ad8a2e718",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "failed",
+      "time" : {
+        "start" : 1626621716756,
+        "stop" : 1626621727547,
+        "duration" : 10791
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Web Tables Sort Validations Smoke",
+      "uid" : "c764c0f9edd338ef",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621714543,
+        "stop" : 1626621716756,
+        "duration" : 2213
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Double Click Example",
+      "uid" : "9c67a1bd0b88fa83",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621708142,
+        "stop" : 1626621714543,
+        "duration" : 6401
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Scorling and Mouse hover",
+      "uid" : "8969d43146821d17",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621694884,
+        "stop" : 1626621708141,
+        "duration" : 13257
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    } ],
+    "uid" : "27fa874cadc1574e37a07abb440963bd"
+  }, {
+    "name" : "0-3",
+    "children" : [ {
+      "name" : "Parent and Child windows switch-Sanity",
+      "uid" : "9f80f6f8f6ef8e23",
+      "parentUid" : "b755a79e149728f67460aea38b0710e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621694964,
+        "stop" : 1626621713315,
+        "duration" : 18351
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Frames switch",
+      "uid" : "79144f2a2db22038",
+      "parentUid" : "b755a79e149728f67460aea38b0710e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621713317,
+        "stop" : 1626621715747,
+        "duration" : 2430
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    } ],
+    "uid" : "b755a79e149728f67460aea38b0710e0"
+  }, {
+    "name" : "0-0",
+    "children" : [ {
+      "name" : "End to End Testing",
+      "uid" : "5ba5a4bb1ec3a2b0",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626620186792,
+        "stop" : 1626620203209,
+        "duration" : 16417
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "End to End Testing",
+      "uid" : "b83b6e663b2a87cd",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621695642,
+        "stop" : 1626621716181,
+        "duration" : 20539
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Parent and Child windows switch-Sanity",
+      "uid" : "60baa5a442f3929d",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626615671186,
+        "stop" : 1626615682894,
+        "duration" : 11708
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "End to End Testing",
+      "uid" : "65d43b17fade7621",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "failed",
+      "time" : {
+        "start" : 1626620365920,
+        "stop" : 1626620387803,
+        "duration" : 21883
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "Frames switch",
+      "uid" : "873e506b46d7eedb",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626615682895,
+        "stop" : 1626615685257,
+        "duration" : 2362
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    }, {
+      "name" : "End to End Testing",
+      "uid" : "2ecf9397eb2d9bea",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "failed",
+      "time" : {
+        "start" : 1626620239369,
+        "stop" : 1626620262513,
+        "duration" : 23144
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    } ],
+    "uid" : "516fe00eea05ad99e936fa729b55eff4"
+  }, {
+    "name" : "Login Successful Page-Sanity",
+    "uid" : "29e1697eb76bf435",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626621695379,
+      "stop" : 1626621695379,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "0-2",
+    "children" : [ {
+      "name" : "Login Fail Test title Smoke",
+      "uid" : "99a77a0e9f9d1ce8",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626621695385,
+        "stop" : 1626621698531,
+        "duration" : 3146
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.164" ]
+    } ],
+    "uid" : "880a094af3dffab161e2023284569d6f"
+  }, {
+    "name" : "Login Failed Page-Smoke",
+    "uid" : "c52fd6a0ee1c9a7b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1626621695378,
+      "stop" : 1626621695378,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "timeline"
+}
