@@ -1,5 +1,5 @@
 describe('Windows and Frames Miscellanous', () => {
-    it('Parent and Child windows switch', () => {
+    it('Parent and Child windows switch-Sanity', () => {
         browser.maximizeWindow()
         browser.url("https://rahulshettyacademy.com/AutomationPractice/")
         $("[onClick='openWindow()']").click()

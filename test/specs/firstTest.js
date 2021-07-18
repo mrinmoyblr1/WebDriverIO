@@ -1,5 +1,5 @@
 describe('Ecommerce Application', () => {
-    it('Login Failed Page-Smoke', () => {
+    xit('Login Failed Page-Smoke', () => {
         //WebDriverIOCode Here
         browser.url("/loginpagePractise/#")
         browser.maximizeWindow()
@@ -25,18 +25,33 @@ describe('Ecommerce Application', () => {
         //expect(browser).toHaveTitleContaining("Proto")
         //browser.pause(3000)
     })
-    
-    it('Login Successful Page', () => {
+    xit('Login Successful Page-Sanity', () => {
+        browser.maximizeWindow()
         browser.url("https://rahulshettyacademy.com/loginpagePractise/#")
         $("#username").setValue("rahulshettyacademy")
         const password = $("//*[@id='password']")
         password.setValue("learning")
         $("#signInBtn").click()
-        const link = $("*=Checkout")
-        //This is the Partial Linked Test syntax
-        link.waitForExist()
+        browser.pause(5000)
+        //const link = $("*=Checkout")
+        //This is the Partial Linked Text syntax
+        //  link.waitForExist()
         //This wait time period will be configured from "waitforTimeout: 10000" filed under "wdio.conf.js" file
         expect(browser).toHaveTitleContaining("ProtoCommerce")
         expect(browser).toHaveUrlContaining("shop")
-    })
+    }),
+
+        // We will try the mocha Retry Mechanasm here
+        it('Login Fail Test title Smoke', function () {
+            this.retries(1)
+            //Here this Test will try to execute 2 times whenever it's failed. After 2 times also if it's not passed then it will be reported as failed 
+            //but in the second time if the Test passed then the Test will be reported as Passed.
+            browser.maximizeWindow()
+            browser.url("/loginpagePractise/#")
+            $("#username").setValue("rahulshettyacademy")
+            $("input[id*='pass']").setValue("Hello")
+            $("#signInBtn").click()            
+
+            expect($("p.text-white")).toHaveTextContaining("rahul shetty academy")
+        })
 });

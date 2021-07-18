@@ -23,12 +23,22 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
+
+    suites: {
+        debitCard: ['test/specs/windowsFrames.js', 'test/specs/uiControls.js'],
+        creditCard: ['test/specs/eCommerceE2E.js']
+    },
+
     specs: [
         './test/specs/**/*.js'
     ],
     // Patterns to exclude.
+
     exclude: [
-        // 'path/to/excluded/files'
+        'test/specs/eCommerceE2E.js',
+        'test/specs/uiControls.js',
+        'test/specs/finctionalScenarios.js',
+        'test/specs/poTest.js'
     ],
     //
     // ============
@@ -54,39 +64,39 @@ exports.config = {
     //
     capabilities: [
         {
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        maxInstances: 5,
-        //
-        // browserName: 'chrome', 
-        // 'goog:chromeOptions': {
-        //     args: ['--headless', '--disable-gpu']        
-        // },
-        browserName: 'chrome',
-        acceptInsecureCerts: true
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
-    },
-    {
-        // maxInstances can get overwritten per capability. So if you have an in house Selenium
-        // grid with only 5 firefox instance available you can make sure that not more than
-        // 5 instance gets started at a time.
-        maxInstances: 5,
-        browserName: 'firefox',
-        specs: [
-            './test/specs/**/po.js'
-        ],
-        'moz:firefoxOptions': {
-            // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
-            // args: ['-headless']
+            // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+            // grid with only 5 firefox instances available you can make sure that not more than
+            // 5 instances get started at a time.
+            maxInstances: 5,
+            //
+            // browserName: 'chrome', 
+            // 'goog:chromeOptions': {
+            //     args: ['--headless', '--disable-gpu']        
+            // },
+            browserName: 'chrome',
+            acceptInsecureCerts: true
+            // If outputDir is provided WebdriverIO can capture driver session logs
+            // it is possible to configure which logTypes to include/exclude.
+            // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+            // excludeDriverLogs: ['bugreport', 'server'],
+        },
+        {
+            // maxInstances can get overwritten per capability. So if you have an in house Selenium
+            // grid with only 5 firefox instance available you can make sure that not more than
+            // 5 instance gets started at a time.
+            maxInstances: 5,
+            browserName: 'firefox',
+            specs: [
+                './test/specs/**/po.js'
+            ],
+            'moz:firefoxOptions': {
+                // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
+                // args: ['-headless']
+            }
         }
-    }
     ],
 
-    
+
     //
     // ===================
     // Test Configurations

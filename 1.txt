@@ -1,0 +1,104 @@
+
+Execution of 2 workers started at 2021-07-18T11:06:25.808Z
+
+[0-0] RUNNING in chrome - D:\Study\WebDriverIO\test\specs\firstTest.js
+[0-0] Error in "Ecommerce Application Login Successful Page-Sanity"
+Error: element ("*=Checkout") still not existing after 9000ms
+    at D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+    at async Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:32)
+    at async Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
+    at Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
+    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
+    at Element.elementErrorHandlerCallback (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:44:12)
+    at Element.waitForExist (D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\element\waitForExist.js:40:17)
+    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:60:23)
+    at Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:65)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at Context.<anonymous> (D:\Study\WebDriverIO\test\specs\firstTest.js:37:14)
+    at Context.executeSync (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:38:22)
+    at D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:69:68
+[0-0] FAILED in chrome - D:\Study\WebDriverIO\test\specs\firstTest.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 91.0.4472.164 windows #0-0] Running: chrome (v91.0.4472.164) on windows
+[chrome 91.0.4472.164 windows #0-0] Session ID: 4d656d0eebad029cfef161153dd0665f
+[chrome 91.0.4472.164 windows #0-0]
+[chrome 91.0.4472.164 windows #0-0] » \test\specs\firstTest.js
+[chrome 91.0.4472.164 windows #0-0] Ecommerce Application
+[chrome 91.0.4472.164 windows #0-0]    [31m✖[39m Login Successful Page-Sanity
+[chrome 91.0.4472.164 windows #0-0]
+[chrome 91.0.4472.164 windows #0-0] [31m1 failing (10.5s)[39m
+[chrome 91.0.4472.164 windows #0-0]
+[chrome 91.0.4472.164 windows #0-0] 1) Ecommerce Application Login Successful Page-Sanity
+[chrome 91.0.4472.164 windows #0-0] [31melement ("*=Checkout") still not existing after 9000ms[39m
+[chrome 91.0.4472.164 windows #0-0] [90mError: element ("*=Checkout") still not existing after 9000ms[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at async Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:32)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at async Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:105:25)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:100:24)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:67:44)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.elementErrorHandlerCallback (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:44:12)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.waitForExist (D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\element\waitForExist.js:40:17)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:60:23)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:65)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at processTicksAndRejections (internal/process/task_queues.js:95:5)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Context.<anonymous> (D:\Study\WebDriverIO\test\specs\firstTest.js:37:14)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Context.executeSync (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:38:22)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:69:68[39m
+
+
+Spec Files:	 0 passed, 1 failed, 1 skipped, 2 total (100% completed) in 00:00:12 
+
+
+Execution of 2 workers started at 2021-07-18T11:08:22.654Z
+
+[0-0] RUNNING in chrome - D:\Study\WebDriverIO\test\specs\firstTest.js
+[0-0] Error in "Ecommerce Application Login Successful Page-Sanity"
+Error: element ("*=Checkout") still not existing after 9000ms
+    at D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+    at async Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:32)
+    at async Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
+    at Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
+    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
+    at Element.elementErrorHandlerCallback (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:44:12)
+    at Element.waitForExist (D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\element\waitForExist.js:40:17)
+    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:60:23)
+    at Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:65)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at Context.<anonymous> (D:\Study\WebDriverIO\test\specs\firstTest.js:38:14)
+    at Context.executeSync (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:38:22)
+    at D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:69:68
+[0-0] FAILED in chrome - D:\Study\WebDriverIO\test\specs\firstTest.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 91.0.4472.164 windows #0-0] Running: chrome (v91.0.4472.164) on windows
+[chrome 91.0.4472.164 windows #0-0] Session ID: ab8952058e3d66478335dc5174222e05
+[chrome 91.0.4472.164 windows #0-0]
+[chrome 91.0.4472.164 windows #0-0] » \test\specs\firstTest.js
+[chrome 91.0.4472.164 windows #0-0] Ecommerce Application
+[chrome 91.0.4472.164 windows #0-0]    [31m✖[39m Login Successful Page-Sanity
+[chrome 91.0.4472.164 windows #0-0]
+[chrome 91.0.4472.164 windows #0-0] [31m1 failing (15.6s)[39m
+[chrome 91.0.4472.164 windows #0-0]
+[chrome 91.0.4472.164 windows #0-0] 1) Ecommerce Application Login Successful Page-Sanity
+[chrome 91.0.4472.164 windows #0-0] [31melement ("*=Checkout") still not existing after 9000ms[39m
+[chrome 91.0.4472.164 windows #0-0] [90mError: element ("*=Checkout") still not existing after 9000ms[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at async Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:32)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at async Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:105:25)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.runCommandWithHooks (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:100:24)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:67:44)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.elementErrorHandlerCallback (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:44:12)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.waitForExist (D:\Study\WebDriverIO\node_modules\webdriverio\build\commands\element\waitForExist.js:40:17)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.wrapCommandFn (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:60:23)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Element.elementErrorHandlerCallbackFn (D:\Study\WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:65)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at processTicksAndRejections (internal/process/task_queues.js:95:5)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Context.<anonymous> (D:\Study\WebDriverIO\test\specs\firstTest.js:38:14)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at Context.executeSync (D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:38:22)[39m
+[chrome 91.0.4472.164 windows #0-0] [90m    at D:\Study\WebDriverIO\node_modules\@wdio\sync\build\index.js:69:68[39m
+
+
+Spec Files:	 0 passed, 1 failed, 1 skipped, 2 total (100% completed) in 00:00:17 
+
